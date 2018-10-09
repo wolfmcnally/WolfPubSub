@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfPubSub'
-    s.version          = '1.0'
+    s.version          = '1.0.1'
     s.summary          = 'A framework for intra-app communication via publishing and unpublishing notifications called Bulletins.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfPubSub'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
     s.source_files = 'WolfPubSub/Classes/**/*'
 
-    s.ios.deployment_target = '10.0'
+    s.ios.deployment_target = '9.3'
     s.macos.deployment_target = '10.13'
     s.tvos.deployment_target = '11.0'
 
