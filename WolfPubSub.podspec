@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfPubSub'
-    s.version          = '1.0.1'
+    s.version          = '2.0.0'
     s.summary          = 'A framework for intra-app communication via publishing and unpublishing notifications called Bulletins.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfPubSub'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Wolf McNally' => 'wolf@wolfmcnally.com' }
     s.source           = { :git => 'https://github.com/wolfmcnally/WolfPubSub.git', :tag => s.version.to_s }
 
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
 
     s.source_files = 'WolfPubSub/Classes/**/*'
 

@@ -88,8 +88,8 @@ public class Publisher<T: Publishable>: PublisherProtocol {
         removeAllSubscribers()
     }
 
-    public var hashValue: Int {
-        return id.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 
     public static func == (lhs: Self, rhs: Self) -> Bool {

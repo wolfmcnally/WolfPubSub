@@ -53,8 +53,8 @@ open class Bulletin: Publishable {
         self.duration = duration
     }
 
-    public var hashValue: Int {
-        return id
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 
     public static func == (lhs: Bulletin, rhs: Bulletin) -> Bool {

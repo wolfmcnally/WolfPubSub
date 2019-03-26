@@ -39,7 +39,7 @@ public class Subscriber<T: Publishable>: SubscriberProtocol {
     public typealias PublisherType = Publisher<PublishableType>
 
     private let id = UUID()
-    private private(set) var subscribedItems = Set<PublishableType>()
+    private var subscribedItems = Set<PublishableType>()
     private var publishers = WeakSet<PublisherType>()
 
     public typealias ItemBlock = (PublishableType) -> Void
@@ -79,8 +79,8 @@ public class Subscriber<T: Publishable>: SubscriberProtocol {
         removeAllPublishers()
     }
 
-    public var hashValue: Int {
-        return id.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 
     public static func == (lhs: Self, rhs: Self) -> Bool {
