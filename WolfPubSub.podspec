@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfPubSub'
-    s.version          = '2.0.0'
+    s.version          = '2.0.1'
     s.summary          = 'A framework for intra-app communication via publishing and unpublishing notifications called Bulletins.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfPubSub'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
     s.swift_version = '5.0'
 
-    s.source_files = 'WolfPubSub/Classes/**/*'
+    s.source_files = 'Sources/WolfPubSub/**/*'
 
     s.ios.deployment_target = '9.3'
     s.macos.deployment_target = '10.13'
@@ -18,6 +18,5 @@ Pod::Spec.new do |s|
 
     s.module_name = 'WolfPubSub'
 
-    s.dependency 'WolfFoundation'
-    s.dependency 'WolfConcurrency'
+    s.dependency 'WolfCore'
 end
