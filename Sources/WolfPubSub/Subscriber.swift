@@ -23,7 +23,7 @@
 //  SOFTWARE.
 
 import Foundation
-import WolfCore
+import WolfFoundation
 
 public protocol SubscriberProtocol: Hashable {
     associatedtype PublishableType
